@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nansen": {
+      "type": "http",
+      "url": "https://mcp.nansen.ai/ra/mcp/",
+      "headers": {
+        "NANSEN-API-KEY": "s9EV7zfSYaa53Iv2fUREFz7JTABEMrUE"
+      }
+    }
+  }
+}
