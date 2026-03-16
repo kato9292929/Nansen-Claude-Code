@@ -1,13 +1,13 @@
 "use client";
 
-import { ChevronDown, Crosshair } from "lucide-react";
+import { ChevronDown, Zap } from "lucide-react";
 import { Button } from "./Button";
 
 const navItems = [
-  { label: "Features", hasChevron: true },
-  { label: "Solutions", hasChevron: false },
-  { label: "Plans", hasChevron: false },
-  { label: "Learning", hasChevron: true },
+  { label: "機能", hasChevron: true },
+  { label: "ユースケース", hasChevron: false },
+  { label: "料金", hasChevron: false },
+  { label: "ドキュメント", hasChevron: true },
 ];
 
 export function Navbar() {
@@ -24,7 +24,7 @@ export function Navbar() {
               boxShadow: "inset 0 1px 1px rgba(255,255,255,0.15)",
             }}
           >
-            <Crosshair
+            <Zap
               className="w-4 h-4"
               style={{ color: "hsl(121 95% 76%)" }}
             />
@@ -33,7 +33,7 @@ export function Navbar() {
             className="text-xl font-semibold tracking-wide"
             style={{ color: "hsl(40 6% 95%)" }}
           >
-            APEX
+            x402
           </span>
         </div>
 
@@ -55,7 +55,7 @@ export function Navbar() {
         </ul>
 
         {/* CTA */}
-        <Button variant="navCta">Sign Up</Button>
+        <Button variant="navCta">無料で始める</Button>
       </div>
     </nav>
   );

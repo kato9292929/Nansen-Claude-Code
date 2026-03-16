@@ -8,12 +8,12 @@ const VIDEO_URL =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260309_042944_4a2205b7-b061-490a-852b-92d9e9955ce9.mp4";
 
 const BRANDS = [
-  "Vortex",
-  "Nimbus",
-  "Prysma",
-  "Cirrus",
-  "Kynder",
-  "Halcyn",
+  "Monolith",
+  "Arcwave",
+  "Syntek",
+  "Lumen",
+  "Orbital",
+  "Nexara",
 ];
 
 // Duplicate for seamless loop
@@ -55,7 +55,7 @@ export function HeroSection() {
               className="text-sm"
               style={{ color: "hsl(40 6% 95% / 0.85)" }}
             >
-              Nova+ Launched!
+              自律型AIエージェント、始動
             </span>
             <span
               className="flex items-center gap-0.5 rounded-full px-2 py-0.5 text-sm font-medium"
@@ -64,7 +64,7 @@ export function HeroSection() {
                 color: "hsl(121 95% 76%)",
               }}
             >
-              Explore
+              詳しく見る
               <ChevronRight className="w-3.5 h-3.5" />
             </span>
           </div>
@@ -74,7 +74,8 @@ export function HeroSection() {
             className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] max-w-5xl mb-6"
             style={{ color: "hsl(40 10% 96%)" }}
           >
-            Accelerate Your Revenue Growth Now
+            AIが自律的に、
+            収益を動かす時代へ
           </h1>
 
           {/* Subheading */}
@@ -82,14 +83,13 @@ export function HeroSection() {
             className="text-lg max-w-md mb-10 opacity-80"
             style={{ color: "hsl(40 6% 82%)" }}
           >
-            Drive your funnel forward with clever workflows, analytics, and
-            seamless lead management.
+            人が介在しない圧倒的な効率で、AIエージェントがデータ分析・意思決定・実行までを自律的に完結。ビジネスの収益創出を、次のステージへ。
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <Button variant="hero">Start Free Right Now</Button>
-            <Button variant="heroSecondary">Schedule a Consult</Button>
+            <Button variant="hero">無料で試してみる</Button>
+            <Button variant="heroSecondary">デモを予約する</Button>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export function HeroSection() {
               className="text-sm whitespace-nowrap flex-shrink-0"
               style={{ color: "hsl(40 6% 95% / 0.5)" }}
             >
-              Relied on by brands across the globe
+              先進企業に導入されています
             </p>
 
             {/* Marquee track */}
