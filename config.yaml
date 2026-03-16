@@ -1,0 +1,49 @@
+nansen:
+  api_key: "s9EV7zfSYaa53Iv2fUREFz7JTABEMrUE"
+  endpoint: "https://mcp.nansen.ai/ra/mcp/"
+
+hyperliquid:
+  # Your Hyperliquid private key (never commit this to git!)
+  private_key: "${HL_PRIVATE_KEY}"
+  # Use testnet for testing
+  testnet: false
+
+copy_trading:
+  # Fraction of total account to allocate for copy trading (0.0–1.0)
+  allocation_ratio: 0.3
+  # Max number of wallets to follow simultaneously
+  max_traders: 5
+  # Max leverage applied to any copied trade
+  max_leverage: 5
+  # Minimum USD value to bother copying a trade
+  min_trade_usd: 20.0
+  # Maximum USD size for a single copied trade
+  max_trade_usd: 500.0
+  # Seconds between each poll of smart-money.perp-trades
+  poll_interval: 30
+
+discovery:
+  # Hyperliquid perp symbols to scan for top traders
+  symbols: ["BTC", "ETH", "SOL", "ARB", "AVAX"]
+  # Leaderboard lookback window in days
+  days: 7
+  # Minimum win rate (0.0–1.0) to qualify a trader
+  min_win_rate: 0.60
+  # Minimum number of trades to qualify a trader
+  min_trades: 10
+  # Minimum PnL in USD to qualify a trader
+  min_pnl_usd: 1000.0
+  # How often (seconds) to re-run discovery
+  rediscover_interval: 3600
+  # Smart money labels to filter when monitoring the live feed
+  smart_money_labels: ["Fund", "Smart HL Perps Trader", "Smart Trader", "30D Smart Trader"]
+
+risk:
+  # Hard cap on total open copy-trade exposure in USD
+  max_total_position_usd: 5000.0
+  # Stop following a trader after they lose this % since we started tracking
+  max_trader_drawdown_pct: 30.0
+
+logging:
+  level: "INFO"
+  file: "copytrade.log"

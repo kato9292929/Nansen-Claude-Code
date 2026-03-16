@@ -1,0 +1,6 @@
+requests>=2.31.0
+sseclient-py>=1.8.0
+hyperliquid-python-sdk>=0.9.0
+eth-account>=0.11.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.0

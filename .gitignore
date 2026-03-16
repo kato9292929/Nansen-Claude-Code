@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Runtime state
+state.json
+copytrade.log
+*.log
+
+# Secrets — NEVER commit
+.env
+private_key.txt
+
+# IDE
+.vscode/
+.idea/
